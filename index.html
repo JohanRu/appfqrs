@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App-FoodQr's</title>
+    
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+    <link 
+        rel="stylesheet" 
+        href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" 
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" 
+        crossorigin="anonymous">
+</head>
+<body>
+
+    <div class="toggler">
+        <span id="openNav" >&#9776; Menú</span>
+    </div>
+
+    <nav id="nav" class="sidenav">
+        <ul>
+            <li><h2>FQR's</h2></li>
+            <a href="#" class="closebtn" id="closeNav"> &times; </a>
+            <li><a href="create.html">Nuevo plato</a></li>
+            <li><a href="cardmenu.html">Cards Menu</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>FULL MENU</h1>
+    </header>
+
+    <main id="main">
+        <div id="platos"></div>
+    </main>
+
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
+    <script src="./js/main.js"></script>
+
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

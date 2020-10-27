@@ -1,0 +1,109 @@
+body {
+    background: rgb(209, 209, 209);
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body * {
+    transition: all 0.3s ease-in-out;
+}
+
+main {
+    margin-top: 125px;
+    padding-bottom: 120px;
+}
+
+.toggler {
+    background: rgb(2, 2, 2);
+    padding: 14px;
+}
+
+header {
+    height: 400px;
+    position: relative;
+    z-index: -1;
+    background: url("https://images.unsplash.com/photo-1576428144127-5910570051f8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1010&q=80") bottom;
+    background-size: 100%;
+    margin-top: -45px;
+}
+
+header h1 {
+    padding-top: 250px;
+    font-size: 60px;
+    margin-left: 80%;
+    color: rgb(255, 243, 234);
+    line-height: 60px;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0px;
+    position: fixed;
+    z-index: 99;
+    top: 0px;
+    left: 0px;
+    background: rgb(2, 2, 2);
+    overflow-x: hidden;
+    
+    padding-top: 60px;
+}
+
+.sidenav h2 {
+    color: #eee;
+}
+
+.sidenav a {
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #eee;
+    display: block;
+    
+}
+
+.sidenav a:hover {
+    color: aqua;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0px;
+    right: 25px;
+    font-size: 36px;
+}
+
+#openNav {
+    
+    padding: 10px;
+    border-radius: 3px;
+    color: rgb(209, 209, 209);
+    font-weight: bold;
+    background: rgb(14, 14, 14);
+    cursor: pointer;
+}
+
+#platos {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.plato {
+    width: 100%;
+    max-width: 250px;
+    margin: 12px;
+}
+
+.plato > div {
+    border-radius: 25px;
+    display: block;
+    height: 250px;
+    background-size: 110%;
+}
+
+.plato > div:hover {
+    background-size: 100%;
+}

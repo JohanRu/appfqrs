@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Plato</title>
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="toggler">
+        <span id="openNav" >&#9776; Menú</span>
+    </div>
+
+    <nav id="nav" class="sidenav">
+        <ul>
+            <li><h2>FQR's</h2></li>
+            <a href="#" class="closebtn" id="closeNav"> &times; </a>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cardmenu.html">Cards Menu</a></li>
+        </ul>
+    </nav>
+
+    <main id="main">
+        
+        <h1>Añadir un nuevo plato</h1>
+        <form method="PLATO" id="createForm">
+            <p>Complete todos los espacios para crear un Nuevo Plato.</p>
+            <input type="text" placeholder="Nombre del Producto" id="nombre">
+            <input type="text" placeholder="$ Precio" id="precio">
+            <textarea id="descripcion" placeholder="Descripción"></textarea>
+            <input type="file" id="cover">
+            <input type="submit" id="platoSubmit" value="Enviar">
+        </form>
+
+        <div id="progressHandler">
+            <p>Añadiendo Plato, Por favor espere...</p>
+            <progress id="progressBar" value="0" max="100"></progress>
+        </div>
+
+    </main>
+
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.24.0/firebase-storage.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>

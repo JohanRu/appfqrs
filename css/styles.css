@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&display=swap');
+
+body {
+    font-family: 'Roboto Mono', monospace;
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+}
+
+.food-card {
+    background-color: rgb(224, 217, 208);
+    position: static;
+    width: 325px;
+    overflow: hidden;
+    border-radius: 30px;
+    transform-style: preserve-3d;
+    transform: rotatex(22deg) rotate(-14deg) rotatey(17deg) translatez(var(--z));
+    flex-direction: row;
+}
+
+.food-card__imagen {
+    position: relative;
+    height: 170px;
+}
+
+.food-card__imagen > img {
+    max-width: 100%;
+    width: 100%;
+    border-bottom-right-radius: 30px;
+    transform: rotate(6deg) translate(-10px, -35px);
+    position: absolute;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.food-card__contenido {
+    display: grid;
+    grid-row-gap: 8px;
+    grid-template: 1fr 1fr / 1fr 1fr;
+    padding: 8px 30px 20px;
+}
+
+.food-card__nombre {
+    grid-column: 1;
+    grid-row: 1;
+    font-size: 18px;
+    font-weight: bold;
+    color: #11313c;
+}
+
+.food-card__precio {
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(189, 80, 2);
+    text-align: right;
+}
+
+.food-card__descripcion {
+    grid-column: 1;
+    grid-row: 2;
+    font-size: 14px;
+    font-weight: 500;
+    color: #949a98;
+}
+
+.food-card__rating {
+    grid-column: 2;
+    grid-row: 2;
+    text-align: right;
+}
+
+.food-card__star {
+    width: 16px;
+    height: 16px;
+    background-color: #dadada;
+    display: inline-block;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.food-card__star:not(:last-child) {
+    margin-right: 6px;
+}
+
+.food-card__star--gold {
+    background-color: #e6c356;
+}
